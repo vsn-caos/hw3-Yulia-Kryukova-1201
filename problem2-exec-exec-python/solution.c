@@ -12,7 +12,7 @@ int main(void) {
     //       затем вызовите execvp/execlp для запуска python3,
     //       который вычислит и выведет результат.
     //       Подсказка: python3 -c "print(<выражение>)"
-    har *const argv[] = {
+    char *const argv[] = {
         "python3",
         "-c",
         "import sys; print(eval(sys.stdin.read()))",
